@@ -41,7 +41,7 @@ header{
 
 h1{
 
-    font-size: 4vmin;
+    font-size: 3vmin;
     color: var(--font3);
     font-family:'Rubik Mono One', monospace;;
 
@@ -135,7 +135,7 @@ main{
     margin: 2vw;
     transition: ease;
     transition-duration: 0.4s;
-    min-width: 200px;
+    min-width: 140px;
     min-height: 120px;
     max-width: 600px;
 
