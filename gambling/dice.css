@@ -76,7 +76,8 @@ li{
 a {
     position: relative;
     text-decoration: none;
-  }
+    
+}
 
 .nav{
 
@@ -101,15 +102,42 @@ a {
     
 }
 
-#site_name{
+.chosen_game::before {
+    
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--font3);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+    
+}
 
-    color: var(--font3);
+.chosen_game:hover::before {
 
+    transform: scaleX(1);
 }
   
 .nav:hover::before {
 
     transform: scaleX(1);
+}
+
+.chosen_game{
+
+    color: #1e936a;
+
+}
+
+#site_name{
+
+    color: var(--font3);
+
 }
 
 
@@ -123,117 +151,7 @@ main{
 
 }
 
-.news_page{
 
-    display: flex;
-    justify-content: center;
-
-}
-
-.news_container{
-
-    display: flex;
-    
-}
-
-.card{
-
-    background-color: #121d29;
-    width: 15.5vw;
-    height: 21vh;
-    text-align: center;
-    border-radius: 2em;
-    margin: 2vw;
-    transition: ease;
-    transition-duration: 0.4s;
-    min-width: 140px;
-    min-height: 120px;
-    max-width: 600px;
-
-}
-
-.games_page{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10vh;
-    width: 80%;
-
-}
-
-.game{
-
-    background-color: #121d29;
-    text-align: center;
-    margin: 1vw;
-    width: 100px;
-    height: 15vh;
-    border-radius: 20px;
-
-}
-
-.logo{
-
-    text-align: center;
-    margin: 1vw;
-    width: 100px;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-h3{
-
-    color: #393939;
-    font-size: 2vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.game:nth-child(1){
-
-    width: 28vw;
-
-}
-
-.logo:nth-child(2){
-
-    width: 14vw;
-
-}
-
-.game:nth-child(3){
-
-    width: 28vw;
-
-}
-
-.game:nth-child(4){
-
-    width: 28vw;
-
-}
-
-.game:nth-child(5){
-
-    width: 14vw;
-
-}
-
-.game:nth-child(6){
-
-    width: 13vw;
-
-}
-
-.game:nth-child(7){
-
-    width: 13vw;
-
-}
 
 
 footer{
