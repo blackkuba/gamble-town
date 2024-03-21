@@ -19,22 +19,58 @@
                 <li><a class="nav" href="https://www.youtube.com/watch?v=AZhWW6URrns">black jack</a></li>
             </ul>
         </nav>
+        <div class="account">
+            <p class="money">1000$</p>
+        </div>
     </header>
     <main>
         <section class="whole_UI">
             <aside class="control_panel">
 
-                <p class="pick_coin">wybierz żeton</p>
+                <p class="pick_coin">Pick a chip</p>
                 <div class="coin_container">
-                    <div class="arrow_left"></div>
+                    <div class="arrow_left">
+                        <img src="/media/left-arrow (1).png" alt="">
+                    </div>
 
                     <div class="coins">
                         
                     </div>
 
-                    <div class="arrow_right"></div>
+                    <div class="arrow_right">
+                        <img src="/media/right-arrow (1).png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="pick_coin">Total amount</p>
+                    <div class="control_container"></div>
+                    
+                </div>
+
+                <div>
+                    <p class="pick_coin">Pick currency</p>
+                    <div class="control_container"></div>
 
                 </div>
+
+                <div>
+                    <p class="pick_coin">Set amount</p>
+                    <div class="control_container"></div>
+
+                </div>
+
+                <div>
+                    <p class="pick_coin">Clear</p>
+                    <div class="control_container"></div>
+
+                </div>
+
+                <div>
+                    <div class="button" onclick ="result_style()"><p class="white_text">click me</p></div>
+
+                </div>
+
 
             </aside>
 
@@ -44,13 +80,13 @@
 
                     <div class="result_container">
                         <div id="result">
-
+                            <p id="spiner_num" class="white_text">0</p>
                         </div>
                     </div>
 
                     <div class="spinner_container">
                         <div id="spinner">
-
+                            
                         </div>
                     </div>
 
@@ -167,6 +203,7 @@
         </section>
     </main>
 
+    <script src="roulette.js"></script>
     <footer>
         <p>&copy; Jakub Stopa</p>
     </footer>

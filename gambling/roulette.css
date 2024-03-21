@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html{
 
@@ -183,10 +184,11 @@ main{
 .pick_coin{
 
     color: aliceblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Roboto";
     font-weight: 900;
     font-size: 0.7vmax;
     margin-top: 1vh;
+    text-align: center;
 
 }
 
@@ -206,6 +208,9 @@ main{
     background-color: #2a3b4f;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -224,6 +229,21 @@ main{
     background-color: #2a3b4f;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.control_container{
+
+   width: 13vw;
+   height: 4vh; 
+   border-radius: 7px;
+   margin-bottom: 2vh;
+   margin-top: 0.5vh;
+   border: 2px solid #189c6d;
+   background-color: #101924;
 
 }
 
@@ -270,7 +290,11 @@ main{
 
 #result{
 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -282,6 +306,9 @@ main{
     width: 30vw;
     background-color: #283e5b;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -290,7 +317,33 @@ main{
 
 }
 
+#spiner_num{
 
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+}
+
+.button{
+
+    background-color: #189c6d;
+    width: 10vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 5vh;
+
+
+}
 
 .past_outcome_container{
 
@@ -412,6 +465,26 @@ main{
     font-size: 1vmax;
 
 }
+
+.account{
+
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    
+    }
+
+.money{
+
+    color:rgb(229, 184, 39) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1vmax;
+    margin-right: 5vw;
+    
+
+}
+
 
 .pick_columns{
 
