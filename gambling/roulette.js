@@ -2,6 +2,26 @@
 
 const arrayRed = [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36];
 let pastResults = [];
+let current_result;
+let Picks = [];
+
+
+let Column_Dozen =  document.querySelectorAll(".single");
+// let Even_Money_bets = document.querySelectorAll(" ");
+// let Single_Number = document.querySelectorAll(" ");
+
+Column_Dozen.forEach(button => {
+    button.addEventListener('click', function() {
+        if(Picks.includes(button.innerHTML)){
+            Picks.splice(Picks.indexOf(button.innerHTML), 1);
+        } else {
+            Picks.push(button.innerHTML);
+        };
+        console.log(Picks);
+    }, false);
+});
+
+
 
 function result_style(){
     let result = Math.floor(Math.random()  * 36);
@@ -19,13 +39,11 @@ function result_style(){
 
     //historia wynikow
     pastResults.push(result);
+    current_result = pastResults[pastResults.length -1].toString(); // liczba z ostatniego miejsca arraya
 
-    if(pastResults.length>3){
-        pastResults.shift()
-        pastResults.push(result);
+    if(Picks.includes(current_result)){
+        console.log("sigma")
     };
-
 
     
 };
-
